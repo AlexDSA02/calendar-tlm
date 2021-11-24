@@ -1,0 +1,129 @@
+:host{
+  background: url(/assets/back2.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blockOpacity{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+}
+.titleCalendar{
+  height: 20%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
+.pTitle{
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+.pText{
+  font-size: 30px;
+}
+
+.divBox{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex-flow: column;
+  justify-content: space-around;
+}
+.box {
+  border-radius: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  width: 120px;
+  height: 120px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border: #8f6B29 2px solid;
+}
+.box1 {
+  background: url(/assets/joueur1.jpeg);
+}
+.box2 {
+  background: url(/assets/joueur2.jpeg);
+}
+.box3 {
+  background: url(/assets/joueur3.jpeg);
+}
+.box4 {
+  background: url(/assets/joueur4.jpeg);
+}
+.box5 {
+  background: url(/assets/joueur5.jpeg);
+}
+.box:hover{
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+.box:hover .pDay{
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
+.pDay{
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color:transparent;
+  -webkit-background-clip:text;
+}
+.boxDiv{
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: row;
+}
+.modal{
+  opacity: 0;
+  border:#8f6B29 2px solid;
+  position: fixed;
+  height: 700px;
+  width: 700px;
+  background-color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-size: 50px;
+  text-align: center;
+}
+.edenImg{
+  width: 500px;
+}
+.coverModal{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+}
+.btnDelete{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 30px;
+}

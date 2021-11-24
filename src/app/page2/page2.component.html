@@ -1,0 +1,29 @@
+<div class="blockOpacity">
+  <div class="titleCalendar">
+    <p class="pTitle">CALENDRIER DE L'AVANT TLM</p>
+    <p class="pText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+  </div>
+  <div class="divBox">
+    <div class="boxDiv">
+      <div class="box1 box" *ngFor="let day of arrayNbrDay" (click)="test()"><p class="pDay">{{day}}</p></div>
+    </div>
+    <div class="boxDiv">
+      <div class="box2 box" *ngFor="let day of arrayNbrDay2"><p class="pDay">{{day}}</p></div>
+    </div>
+    <div class="boxDiv">
+      <div class="box3 box" *ngFor="let day of arrayNbrDay3"><p class="pDay">{{day}}</p></div>
+    </div>
+    <div class="boxDiv">
+      <div class="box4 box" *ngFor="let day of arrayNbrDay4"><p class="pDay">{{day}}</p></div>
+    </div>
+  <div class="boxDiv">
+    <div class="box5 box" *ngFor="let day of arrayNbrDay5"><p class="pDay">{{day}}</p></div>
+  </div>
+  </div>
+</div>
+<div class="modal" id="modal">
+  <button id="btnDelete" class="btnDelete" (click)="delete()">X</button>
+  <p>Bon de 100€ valable chez Eden Park</p>
+  <img class="edenImg" src="../../assets/eden.png">
+</div>
+<div class="coverModal" id="blockOpacity"></div>
