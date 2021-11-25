@@ -17,17 +17,7 @@ export class Page2Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    let snow_small = document.getElementsByClassName('snow_small')
-    let snow_large = document.getElementsByClassName('snow_large')
-    let snow_medium = document.getElementsByClassName('snow_medium')
-    this.snow_animation_y
-      .to(snow_small,{y  : 1000}, 0)
-      .to(snow_medium,{y  :1000, duration: 6}, 0)
-      .to(snow_large,{y  :1000, duration: 25}, 0)
-    this.snow_animation_x
-      .to(snow_small,{x  : 150})
-      .to(snow_small,{x  : 0})
-    this.snow_animation_x.repeat(-1)
+
   }
 
 
@@ -61,6 +51,19 @@ export class Page2Component implements OnInit {
       .to(modal, {opacity: 0, duration: 0})
   }
 
+  toto(){
+    let snow_small = document.getElementsByClassName('snow_small')
+    let snow_large = document.getElementsByClassName('snow_large')
+    let snow_medium = document.getElementsByClassName('snow_medium')
+    this.snow_animation_y
+      .to(snow_small,{y  : '1000'}, 0)
+      .to(snow_medium,{y  :'1000', duration: 6}, 0)
+      .to(snow_large,{y  :'1000', duration: 25}, 0)
+    this.snow_animation_x
+      .to(snow_small,{x  : '150'})
+      .to(snow_small,{x  : '0'})
+    this.snow_animation_x.repeat(-1)
+  }
 
 
 }

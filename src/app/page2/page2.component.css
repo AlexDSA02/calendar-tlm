@@ -128,15 +128,24 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  top:0;
   height: 4000px;
   width: 4000px;
 }
 .snow_small{
   background: url(/assets/snow/snow_small.png);
+  animation: fall 10s infinite linear;
 }
 .snow_medium{
   background: url(/assets/snow/snow_medium.png);
+  animation: fall 2s infinite linear;
 }
 .snow_large{
   background: url(/assets/snow/snow_large.png);
+  animation: fall 1s infinite linear;
+}
+@keyframes fall {
+  0% {
+    transform: translateY(-1000px);
+  }
 }
