@@ -1,5 +1,5 @@
 :host{
-  background: url(/assets/back/1.jpg) center center;
+  background: url(/assets/back/3.jpg) center center;
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -64,6 +64,7 @@
   background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
 .pDay{
+  position: absolute;
   background-image: linear-gradient(
     to right,
     #462523 0,
@@ -148,4 +149,11 @@
   0% {
     transform: translateY(-1000px);
   }
+}
+.boxGift{
+  position: inherit;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }

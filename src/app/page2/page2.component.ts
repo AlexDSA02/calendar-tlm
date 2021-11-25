@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { gsap } from 'gsap';
+import { gsap, Bounce } from 'gsap';
 
 @Component({
   selector: 'app-page2',
@@ -66,4 +66,36 @@ export class Page2Component implements OnInit {
   }
 
 
+  animation(day: any) {
+
+    let boxDay : any = []
+    boxDay[day] = document.getElementsByClassName('box'+day)
+    if (boxDay[day].open == true){
+      boxDay[day].open = false
+      console.log('OPEN')
+      gsap.to(boxDay[day],{transformOrigin: 'left', rotateY  : '0', duration: 4, ease: Bounce.easeOut})
+    }
+    else {
+      console.log('CLOSE')
+      boxDay[day].open = true
+      gsap.to(boxDay[day],{transformOrigin: 'left', rotateY  : '140deg', duration: 4, ease: Bounce.easeOut})
+    }
+  }
+
+
+  animation2(day: any) {
+
+    let boxDay : any = []
+    boxDay[day] = document.getElementsByClassName('box'+day)
+    if (boxDay[day].open == true){
+      boxDay[day].open = false
+      console.log('OPEN')
+      gsap.to(boxDay[day],{transformOrigin: 'left', rotateY  : '0', duration: 4})
+    }
+    else {
+      console.log('CLOSE')
+      boxDay[day].open = true
+      gsap.to(boxDay[day],{transformOrigin: 'left', rotateY  : '140deg', duration: 4})
+    }
+  }
 }

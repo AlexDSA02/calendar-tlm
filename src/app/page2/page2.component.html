@@ -12,10 +12,12 @@
         <div class="box2 box" *ngFor="let day of arrayNbrDay2" (click)="toto()"><p class="pDay">{{day}}</p></div>
       </div>
       <div class="boxDiv">
-        <div class="box3 box" *ngFor="let day of arrayNbrDay3"><p class="pDay">{{day}}</p></div>
+        <div class="box3 box box{{day}}" *ngFor="let day of arrayNbrDay3" (click)="animation(day)">
+          <p class="pDay">{{day}}</p>
+        </div>
       </div>
       <div class="boxDiv">
-        <div class="box4 box" *ngFor="let day of arrayNbrDay4"><p class="pDay">{{day}}</p></div>
+        <div class="box4 box box{{day}}" *ngFor="let day of arrayNbrDay4" (click)="animation2(day)"><p class="pDay">{{day}}</p></div>
       </div>
       <div class="boxDiv">
         <div class="box5 box" *ngFor="let day of arrayNbrDay5"><p class="pDay">{{day}}</p></div>
