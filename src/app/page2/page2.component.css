@@ -1,5 +1,5 @@
 :host{
-  background: url(/assets/back4.jpg) no-repeat center center fixed;
+  background: url(/assets/back/1.jpg) center center;
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -7,12 +7,14 @@
   justify-content: center;
   align-items: center;
 }
+
 .blockOpacity{
   background-color: rgba(0, 0, 0, 0.5);
   height: 90%;
   width: 90%;
   display: flex;
   flex-flow: column;
+  z-index: 5;
 }
 .titleCalendar{
   height: 20%;
@@ -112,4 +114,29 @@
   right: 0;
   height: 30px;
   width: 30px;
+}
+
+
+.all_snow{
+  z-index: 3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.snow{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 4000px;
+  width: 4000px;
+}
+.snow_small{
+  background: url(/assets/snow/snow_small.png);
+}
+.snow_medium{
+  background: url(/assets/snow/snow_medium.png);
+}
+.snow_large{
+  background: url(/assets/snow/snow_large.png);
 }
