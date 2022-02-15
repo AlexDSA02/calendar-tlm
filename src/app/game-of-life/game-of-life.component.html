@@ -1,0 +1,11 @@
+<label>Vitesse de jeu</label>
+<input type="range" max="1000" (change)="sizeBoxDefine($event.target)">
+<button (click)="startGame()">Commencer</button>
+<div class="board">
+  <div *ngFor="let colonne of test; let j = index" class="colonne" [ngStyle]="{'width':sizeBox, 'height':sizeBox}">
+    <div *ngFor="let ligne of test; let i = index" class="ligne" (click)="testClick(i,j)">
+      <div *ngIf="test[i][j] === 1" class="alive"></div>
+      <div *ngIf="test[i][j] === 0" class="dead" ></div>
+    </div>
+  </div>
+</div>
