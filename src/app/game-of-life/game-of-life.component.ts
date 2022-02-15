@@ -31,7 +31,12 @@ export class GameOfLifeComponent implements OnInit {
   }
 
   testClick(i: number, j: number) {
-    this.test[i][j] = 1
+    if (this.test[i][j] === 1){
+      this.test[i][j] = 0
+    }
+    else {
+      this.test[i][j] = 1
+    }
 
   }
 
