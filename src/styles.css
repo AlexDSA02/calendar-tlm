@@ -5,3 +5,15 @@
   text-decoration: none;
   list-style: none;
 }
+/*@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(./assets/fonts/Montserrat/static/Montserrat-Regular.ttf) format("truetype");
+}*/
+
+:root{
+  --red : #ff4b36;
+  --green : #20cb6a;
+  --blue : #08104d;
+  --blueLight : #3e49f3;
+  --grey : #f7f8f9;
+}

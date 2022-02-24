@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.body {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  //justify-content: center;
+}
+
+.header{
+  align-self: center;
+  height: 35px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  //background-color: red;
+  width: 90%;
+}
+.header > div > img {
+  margin-right: 20px;
+}
+
+
+.headerFix{
+  z-index: 3;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  align-self: center;
+  //background-color: blue;
+  width: 100%;
+  height: 100px;
+  padding-left: 10% !important;
+  position: fixed;
+  background-color: white;
+}
+.headerFix > img{
+  justify-self: flex-start;
+}
+.headerFix > div{
+  display: flex;
+  flex-flow: row;
+}
+.headerFix > div > p{
+  padding: 0 28px;
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  transition-duration: 0.3s;
+}
+.headerFix > div > p:hover{
+  color: var(--green);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.pLastHeaderFix{
+  //padding-right: 0 !important;
+}
+.headerFixDiv{
+  margin-right: 10%;
+}
+
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://www.faceel-it.com/wp-content/uploads/2021/11/Sans-titre-3.png');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+  //min-width: 2000px;
+  overflow: hidden;
+}
+.home > div{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  //background-color: red;
+}
+.home p{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 47px;
+}
+
+.home > div button{
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid white;
+  height: 58px;
+  width: 258px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home > div button > svg{
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+/*.home > div button:hover {
+  transition-duration: 3s;
+  background-color: var(--red);
+  border: none;
+
+  .svgArrowLeft {
+    transition-duration: 3s;
+    display: block;
+    opacity: 1;
+  }
+
+  .svgArrowRight {
+    transition-duration: 3s;
+    //display: none;
+    opacity: 0;
+  }
+}*/
+
+.skill{
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: var(--grey);
+  height: 680px;
+}
+.skillTitleDiv{
+  overflow: hidden;
+  flex-flow: column;
+  display: flex;
+}
+.underSkillTitleDiv1{
+  display: flex;
+}
+.underSkillTitleDiv2{
+  align-self: flex-end;
+}
+.skillTitleDiv p{
+  color: var(--blue);;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+}
+.underSkillTitleDiv2name{
+  opacity: 0;
+  color: var(--green) !important;
+}
+
+.skillDivLogo{
+  display: flex;
+  flex-flow: row;
+  width: 85%;
+  justify-content: space-between;
+}
+.skillDivLogo div{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.skillDivLogo div:hover {
+  .imgLogoSkill{
+    transform: translateY(-8px);
+    transition-duration: 0.35s;
+    transition-timing-function: cubic-bezier(.38,3,.57,1.6);
+  }
+}
+.skillDivLogo div img{
+  width: 155px;
+  height: 155px;
+  margin-bottom: 20px;
+}
+.skillDivLogo div p{
+  color: var(--blue);;
+  font-size: 27px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.life{
+  padding-left: 15%;
+  padding-top: 50px;
+  height: 680px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.lifeExp{
+  display: flex;
+  flex-flow: row;
+}
+.lifeExp p{
+  background-color: #F2F6FF ;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Montserrat", sans-serif;
+  color: #666a80;
+  border-radius: 30px;
+  margin-right: 40px;
+  padding: 12px 35px;
+  transition-duration: 0.25s !important;
+}
+.lifeExp p:hover{
+  background-color: var(--red) !important;
+  cursor: pointer !important;
+  color: white !important;
+  transition-duration: 0.25s !important;
+}
+
+.lifeExpDetails , .lifeExpDetails2, .lifeExpDetails3{
+  margin-top: 40px;
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-right: 15%;
+}
+.imgCircle{
+  clip-path: ellipse(47% 37% at 51% 50%);
+}
+.lifeExpDetailsName{
+  color: var(--green);
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+}
+.lifeExpDetailsDetails{
+  width: 500px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #666a80;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+.lifeExpDetails3{
+  display: none;
+}
+.lifeExpDetails2{
+  display: none;
+}
+
+.pCompanyAmeu{
+  background-color: var(--red);
+  color: white;
+}
+
+
+
+
+.school{
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  overflow: hidden;
+  background-color: var(--grey);
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.divSchool{
+  width: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column;
+}
+.underSchoolDiv1{
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+.underSchoolDiv1name{
+  color: var(--blue);
+  margin-left: 15px;
+}
+.underSchoolDiv2{
+  color: var(--green);
+  display: flex;
+  justify-content: flex-end;
+}
+.underSchoolDiv2name{
+  opacity: 0;
+}
+.logoSchool{
+  display: flex;
+  height: 150px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.logoSchool > div {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+}
+
+
+.footer{
+  height: 150px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer > div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 33%;
+  height: 100%;
+}
+.footer > div > p{
+  margin-bottom: 10px;
+  color: white;
+}
+
+.logoSocial{
+  display: flex;
+  flex-flow: row !important;
+  color: white;
+}
+.logoSocial1{
+  display: flex;
+  flex-flow: row !important;
+  color: var(--blue);
+}
+.logoSocial div{
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px var(--blue) solid;
+  height: 53px;
+  width: 53px;
+  transition-duration: 0.2s;
+}
+.logoSocial1 div{
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px var(--blue) solid;
+  height: 33px;
+  width: 33px;
+  transition-duration: 0.2s;
+}
+.logoSocial div:hover {
+  transition-duration: 0.2s;
+  background-color: var(--blue);
+}
+
+
+
+@media (max-width: 1200px){
+  .home{
+    width: 1200px;
+    justify-content: flex-start;
+  }
+  .home > div{
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 950px){
+  .headerFix > div{
+    display: none;
+  }
+
+  .home p{
+    font-size: 20px;
+  }
+  .home > div{
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .home > div p{
+    margin-bottom: 30px;
+  }
+  .home > div button{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 58px;
+    width: 258px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }.home > div button > svg{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /*.home > div button:hover {
+    transition-duration: 3s;
+    background-color: var(--red);
+    border: none;
+    .svgArrowLeft{
+      transition-duration: 3s;
+      display: block;
+      opacity: 1;
+    }
+    .svgArrowRight{
+      transition-duration: 3s;
+      //display: none;
+      opacity: 0;
+    }
+  }*/
+  .svgArrowLeft{
+    display: none;
+    opacity: 0;
+  }
+}
+
+
+.ligne-{
+  height: 2px;
+  width: 30%;
+  background-color: var(--blueLight);
+}
+.buttonRedArrow{
+  border: none;
+  border-radius: 10px;
+  height: 58px;
+  width: 258px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--red);
+}
+.buttonRedArrow > svg {
+  margin-left: 10px;
+  margin-right: 10px;
+}
