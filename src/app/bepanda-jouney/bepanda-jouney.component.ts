@@ -84,6 +84,9 @@ export class BepandaJouneyComponent implements OnInit {
 
   clickResponse() {
     this.response = this.caseFinal
-
+    if (this.caseFinal.length === 0){
+      this.response.push('Aucune route possible')
+    }
+    console.log(this.response)
   }
 }

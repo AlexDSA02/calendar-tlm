@@ -1,6 +1,13 @@
-.toto{
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
+.containAll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f8c8d;
+  width: 100vw;
+  height: 100vh;
 }
 
+.containInputs{
+  background-color: red;
+
+}
