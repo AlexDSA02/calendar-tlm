@@ -1,0 +1,78 @@
+.containerAll{
+  background-color: rgb(10, 195, 167);
+  width: 100%;
+  height: 100%;
+}
+.headerDiv{
+  position: fixed;
+  background-color: rgb(9, 160, 137);
+  height: 58px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.headerDiv > div{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.headerDiv > div > div > p{
+  color: var(--OC_beige);
+  font-size: 0.9em;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding-left: 12px;
+
+  padding-right: 12px;
+}
+.headerDiv > div > div:hover{
+  filter: brightness(80%);
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.headerDiv > div > div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnHeader{
+  background-color: transparent;
+  text-decoration: none;
+  border: 2px solid var(--OC_beige);
+  color: var(--OC_beige);
+  border-radius: 2em;
+  height: 42px;
+  padding: 0 2em;
+  font-size: 0.9em;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.container1{
+  height: 1260px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container1_divLogo{
+  padding-top: 126px;
+}
+
+.container1_div_4logo{
+  margin-bottom: 62px;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.container1_div_4logo > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
