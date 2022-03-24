@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bepanda-jouney.component.scss']
 })
 export class BepandaJouneyComponent implements OnInit {
-  case1: string = 'Lille -> Paris'
-  case2: string = 'Lille -> Compiegne -> Paris'
-  case4: string = 'Lille -> Arras -> Paris'
-  case3: string = 'Lille -> Arras -> Compiegne -> Paris'
+  case1: string = 'Lille, Paris'
+  case2: string = 'Lille, Compiègne, Paris'
+  case4: string = 'Lille, Arras, Paris'
+  case3: string = 'Lille, Arras, Compiègne, Paris'
   time: number = 0
   minSelected: number = 0
   hourSelected: number = 0
