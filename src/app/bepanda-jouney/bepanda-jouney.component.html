@@ -1,1 +1,16 @@
-<p>bepanda-jouney works!</p>
+<div class="containAll">
+  <div class="containInputs">
+    <div class="containInputHour">
+      <p>Heures</p>
+      <input #hourInput (change)="changeHour(hourInput.value)" type="number">
+      <p>Minutes</p>
+      <input #minInput (change)="changeMin(minInput.value)" type="number">
+    </div>
+    <div class="containInputMoney">
+      <p>Euros</p>
+      <input #moneyInput (change)="changeMoney(moneyInput.value)" type="number">
+    </div>
+    <button (click)="clickResponse()">CLICK</button>
+  </div>
+  <p *ngFor="let responseElement of response">{{responseElement}}</p>
+</div>
